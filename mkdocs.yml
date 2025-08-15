@@ -1,0 +1,35 @@
+# Site information
+site_name: My AI Blog
+site_description: Notes on artificial intelligence, development, and technology.
+site_author: Your Name
+
+# Theme configuration
+theme:
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs # Top-level navigation tabs
+    - content.code.copy # Copy button for code blocks
+
+# Site navigation (menu)
+nav:
+  - 'Home': 'index.md'
+  - 'Articles':
+    - 'Advanced AI Usage': 'posts/advanced-ai-usage.md'
+    - 'Gemini X3 Plugin': 'posts/gemini-x3-plugin.md'
+
+# Markdown extensions (for tables, footnotes, admonitions, etc.)
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
